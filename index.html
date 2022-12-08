@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="shortcut icon" href="img/601px-Pokebola-pokeball-png-0.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- #region ENCABEZADO -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="img/601px-Pokebola-pokeball-png-0.png" alt="pokebola" class="nav__logo-img">
+        Pokemon
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sobre" class="nav__link">Sobre</a>
+          </li>
+          <li class="nav__item">
+            <a href="#Pokemon" class="nav__link">Pokemon</a>
+          </li>
+          <li class="nav__item">
+            <a href="#new" class="nav__link">Nuevo</a>
+          </li>
+          <a href="./pokedex.html" class="button button--ghost">Pokedex</a>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+        <img src="img/nav-img.png" alt="pokeball" class="nav__img" />
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+ 
+  <!-- Principal-->
+  <main class="main">
+    <!--Menu inicial-->
+    <section class="home container" id="home">
+      <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+          <!--1 2 3-->
+          <section class="swiper-slide">
+            <div class="home__content grid">
+              <div class="home__group">
+                <img src="img/inicio.png" alt="ash" class="home__img" />
+                <div class="home__indicator"></div>
+
+                <div class="home__details-img">
+                  <h4 class="home__details-title">Ash Ketchum</h4>
+                  <span class="home__details-subtitle">
+                    Entrenador</span>
+                </div>
+              </div>
+
+              <div class="home__data">
+                <h3 class="home__subtitle">Es el primer campeón de Liga de Alola</h3>
+                <h1 class="home__title">
+                  ¡Atrápalos ya! <br />
+
+
+                </h1>
+                <p class="home__description">
+                  Es un entrenador Pokémon que junto con su Pokémon inicial Pikachu.
+
+                </p>
+
+                <div class="home__buttons">
+                  <a href="#" class="button" > ¡Atrápalos ya! </a>
+                  <a href="#" class="button--link button--flex" onclick="ReproducirSonido()" id="myAudio">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="swiper-slide">
+            <div class="home__content grid">
+              <div class="home__group">
+                <img src="img/pokemon4.png" alt="rocket team" class="home__img" />
+                <div class="home__indicator"></div>
+
+                <div class="home__details-img">
+                  <h4 class="home__details-title">Jessie y James </h4>
+                  <span class="home__details-subtitle">
+                    No hay palabras para describirlos</span>
+                </div>
+              </div>
+
+              <div class="home__data">
+                <h3 class="home__subtitle">Equipo Rocket </h3>
+                <h1 class="home__title">
+                  Ha sido vencido otra vez <br />
+
+                </h1>
+                <p class="home__description">
+                  es una asociación ilícita con fines criminales. Esta organización hace cualquier cosa con tal de ganar
+                  dinero. Su negocio más
+                  frecuente es el de robar Pokémon para luego venderlos a precios elevados.
+                </p>
+
+                <div class="home__buttons">
+                  <a href="#" class="button">Ayudalos</a>
+        
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="swiper-slide">
+            <div class="home__content grid">
+              <div class="home__group">
+                <img src="img/categoria2.png" alt="pikachu" class="home__img" />
+                <div class="home__indicator"></div>
+
+                <div class="home__details-img">
+                  <h4 class="home__details-title">Pikachu</h4>
+                  <span class="home__details-subtitle">. Es uno de los Pokémon más conocidos. </span>
+                </div>
+              </div>
+
+              <div class="home__data">
+                <h3 class="home__subtitle"> ¡Pokémon, yo te elijo! </h3>
+                <h1 class="home__title">
+                  Pikachu <br />
+
+
+                </h1>
+                <p class="home__description">
+                  Pokémon de tipo eléctrico introducido en la primera generación. Es el Pokémon más conocido de la
+                  historia, es el  acompañante  Ash Ketchum y la mascota
+                  representante de la franquicia Pokémon.
+                </p>
+
+                <div class="home__buttons">
+                  <a href="#" class="button"> Pikachu!</a>
+                 
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!--Categorias-->
+    <section class="section category">
+      <h2 class="section__title">
+        Pokemon favorito <br />
+        Categorias
+      </h2>
+
+      <div class="category__container container grid">
+        <div class="category__data">
+          <img src="img/pokemon600_3.png" alt="bulbasor" class="category__img" />
+          <h3 class="category__title">Bulbasaur</h3>
+          <p class="category__description">
+            Tiene aspecto de un pequeño reptil, con cuerpo verde claro y manchas más oscuras.
+          </p>
+        </div>
+
+        <div class="category__data">
+          <img src="img/pokemon600_2.png" alt="charmander" class="category__img" />
+          <h3 class="category__title">Charmander</h3>
+          <p class="category__description">
+            Pokémon Verde y Pokémon Azul y Pokémon Rojo Fuego y Pokémon Verde Hoja.
+          </p>
+        </div>
+
+        <div class="category__data">
+          <img src="img/pokemon600.png" alt="Squirtle" class="category__img" />
+          <h3 class="category__title">Squirtle</h3>
+          <p class="category__description">
+            Es uno de los Pokémon iniciales que pueden elegir los entrenadores que empiezan su aventura en la región
+            Kanto.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Acerca de-->
+    <section class="section sobre" id="sobre">
+      <div class="sobre__container container grid">
+        <div class="sobre__data">
+          <h2 class="section__title sobre__title">
+            Acerca Pokemon
+            <br />
+            Night
+          </h2>
+          <p class="sobre__description">
+            es un anime metaserial creado por Satoshi Tajiri, Junichi Masuda y Ken Sugimori, que narra la historia de
+            Ash Ketchum, un joven entrenador Pokémon de Pueblo Paleta que comienza un viaje para alcanzar su sueño, ser
+            un Maestro Pokémon.
+          </p>
+          <a href="#" class="button"> Saber más</a>
+        </div>
+
+        <img src="img/nuevo3.png" alt="giglipop" class="sobre__img" />
+      </div>
+    </section>
+    <!--pokemon-->
+    <section class="section pokemon" id="pokemon">
+      <h2 class="section__title">Entrenador</h2>
+
+      <div class="pokemon__container container grid">
+        <div class="pokemon__content">
+          <img src="img/sobre.png" alt="pokedex1" class="pokemon__img" />
+          <h3 class="pokemon__title">Pokedex</h3>
+          <span class="pokemon__subtitle">Indexador Pokémon</span>
+          <span class="pokemon__precio">$15.000</span>
+          <button class="button pokemon__button">
+            <i class="bx bx-cart-alt pokemon__icon"></i>
+          </button>
+        </div>
+
+        <div class="pokemon__content">
+          <img src="img/601px-Pokebola-pokeball-png-0.png" alt="pokebola1" class="pokemon__img" />
+          <h3 class="pokemon__title">Pokebola</h3>
+          <span class="pokemon__subtitle">Accessorio</span>
+          <span class="pokemon__precio">$5.000</span>
+          <button class="button pokemon__button">
+            <i class="bx bx-cart-alt pokemon__icon"></i>
+          </button>
+        </div>
+
+        <div class="pokemon__content">
+          <img src="img/categoria2.png" alt="pikachu2" class="pokemon__img" />
+          <h3 class="pokemon__title">Pokemon</h3>
+          <span class="pokemon__subtitle">pikachu</span>
+          <span class="pokemon__precio">$10.000</span>
+          <button class="button pokemon__button">
+            <i class="bx bx-cart-alt pokemon__icon"></i>
+          </button>
+        </div>
+
+        <div class="pokemon__content">
+          <img src="img/descuento4.png" alt="Wartortle " class="pokemon__img" />
+          <h3 class="pokemon__title">Wartortle </h3>
+          <span class="pokemon__subtitle">pokemon</span>
+          <span class="pokemon__precio">$10.000</span>
+          <button class="button pokemon__button">
+            <i class="bx bx-cart-alt pokemon__icon"></i>
+          </button>
+        </div>
+
+        <div class="pokemon__content">
+          <img src="img/descuento5.png" alt="Charmeleon" class="pokemon__img" />
+          <h3 class="pokemon__title">Charmeleon</h3>
+          <span class="pokemon__subtitle">pokemon</span>
+          <span class="pokemon__precio">$15.000</span>
+          <button class="button pokemon__button">
+            <i class="bx bx-cart-alt pokemon__icon"></i>
+          </button>
+        </div>
+
+        <div class="pokemon__content">
+          <img src="img/descuento6.png" alt="Ivysaur" class="pokemon__img" />
+          <h3 class="pokemon__title">Ivysaur</h3>
+          <span class="pokemon__subtitle">pokemon</span>
+          <span class="pokemon__precio">$15.000</span>
+          <button class="button pokemon__button">
+            <i class="bx bx-cart-alt pokemon__icon"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Descuentos-->
+    <section class="section descuento">
+      <div class="descuento__container container grid">
+        <div class="descuento__data">
+          <h2 class="descuento__title">
+            50% de descuento <br />
+
+            Sobre nuevos pokemons
+          </h2>
+          <a href="#" class="button">Ir a nuevo</a>
+        </div>
+
+        <img src="img/descuento.png" alt="" class="descuento__img" />
+      </div>
+    </section>
+    <!--Nuevos -->
+    <section class="section new" id="new">
+      <h2 class="section__title">Los recién llegados</h2>
+
+      <div class="new__container container">
+        <div class="swiper new-swiper">
+          <div class="swiper-wrapper">
+            <div class="new__content swiper-slide">
+              <div class="new__tag">Nuevo</div>
+              <img src="img/pokemon7.png" alt="EEVEE" class="new__img" />
+              <h3 class="new__title">Eevee</h3>
+              <span class="new__subtitle">Accesorio</span>
+
+              <div class="new__precios">
+                <span class="new__precio">$15.000</span>
+                <span class="new__descuento">$30.000</span>
+              </div>
+
+              <button class="button new__button">
+                <i class="bx bx-cart-alt new__icon"></i>
+              </button>
+            </div>
+
+            <div class="new__content swiper-slide">
+              <div class="new__tag">Nuevo</div>
+              <img src="img/pakemon5.png" alt="Caterpie" class="new__img" />
+              <h3 class="new__title">Caterpie</h3>
+              <span class="new__subtitle">Accesorio</span>
+
+              <div class="new__precios">
+                <span class="new__precio">$12.000</span>
+                <span class="new__descuento">$22.000</span>
+              </div>
+
+              <button class="button new__button">
+                <i class="bx bx-cart-alt new__icon"></i>
+              </button>
+            </div>
+
+            <div class="new__content swiper-slide">
+              <div class="new__tag">Nuevo</div>
+              <img src="img/pakemon5.png" alt="Caterpie" class="new__img" />
+              <h3 class="new__title">Caterpie</h3>
+              <span class="new__subtitle">Accesorio</span>
+
+              <div class="new__precios">
+                <span class="new__precio">$12.000</span>
+                <span class="new__descuento">$22.000</span>
+              </div>
+
+              <button class="button new__button">
+                <i class="bx bx-cart-alt new__icon"></i>
+              </button>
+            </div>
+
+
+            
+            <div class="new__content swiper-slide">
+              <div class="new__tag">Nuevo</div>
+              <img src="img/nuevo4.png" alt="" class="new__img" />
+              <h3 class="new__title">Vaporeon</h3>
+              <span class="new__subtitle">Accesorio</span>
+
+              <div class="new__precios">
+                <span class="new__precio">$7.000</span>
+                <span class="new__descuento">$14.900</span>
+              </div>
+
+              <button class="button new__button">
+                <i class="bx bx-cart-alt new__icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Suscribirse-->
+    <section class="section newsletter">
+      <div class="newsletter__container container">
+        <h2 class="section__title">El Newsletter</h2>
+        <p class="newsletter__description">
+          Recibe en tu email nuevos productos y descuentos.
+        </p>
+
+        <form action="" class="newsletter__form">
+          <input type="text" placeholder="Enter your email" class="newsletter__input" />
+          <button class="button">Subscribete</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!--Pie de pagina-->
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <img src="img/601px-Pokebola-pokeball-png-0.png" alt="DIGLET" class="footer__logo-img" />
+          Pokemon
+        </a>
+
+        <p class="footer__description">
+          Al que madruga Dios lo ayuda, o en este caso,  <br />
+          consigue un Pokémon.
+        </p>
+
+        <div class="footer__social">
+          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Gimnasios Pokemon</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Sobre Pokemons</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Campeonatos</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Batallas</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title"></h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Medallas</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Torneos</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Envios</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Batallas</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="#" class="footer__link">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Fechas</a>
+          </li>
+          <li>
+            <a href="#" class="footer__link">Mapas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <span class="footer__copy">&#169; pokemon pagina</span>
+
+    <img src="img/footer.png" alt="" class="footer__img-one" />
+    <img src="img/footer2.png" alt="" class="footer__img-two" />
+  </footer>
+  <!-- #endregion -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+  </a>
+
+  <!--Scroll para que se revelen los elementos de forma suave-->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <!--Deslizar elementos en una lista-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!--sonidos-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
